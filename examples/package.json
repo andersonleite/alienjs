@@ -1,0 +1,12 @@
+{
+  "name": "alien-examples",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "start": "servez .."
+  },
+  "devDependencies": {
+    "rollup": "^2.45.2",
+    "servez": "^1.11.0"
+  }
+}

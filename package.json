@@ -1,0 +1,52 @@
+{
+  "name": "alien.js",
+  "version": "0.19.0",
+  "description": "Future web pattern",
+  "homepage": "https://alien.js.org/",
+  "keywords": [
+    "alien",
+    "alien.js",
+    "javascript",
+    "3d",
+    "animation",
+    "interaction",
+    "physics",
+    "svg",
+    "canvas",
+    "three.js",
+    "webgl",
+    "webgl2",
+    "webaudio",
+    "gui",
+    "ui",
+    "creative coding"
+  ],
+  "author": "pschroen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pschroen/alien.js"
+  },
+  "bugs": {
+    "url": "https://github.com/pschroen/alien.js/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "concurrently --names \"ROLLUP,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"rollup -c -w -m inline\" \"servez public\"",
+    "start": "servez public"
+  },
+  "dependencies": {
+    "oimophysics": "saharan/OimoPhysics",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "concurrently": "^6.0.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-bundleutils": "^1.2.3",
+    "servez": "^1.11.0"
+  }
+}
